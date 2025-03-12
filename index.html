@@ -11,9 +11,9 @@
 
 <body>
     <header class="">
-        <nav class="w-11/12 mx-auto flex justify-between items-center py-5 border-b-2 border-[#17171720]">
+        <nav class="w-11/12 mx-auto flex justify-between gap-3 items-center py-5 border-b-2 border-[#17171720]">
             <div class="log">
-                <img class="w-[150px]" src="assets/Logo.png" alt="">
+                <img class="md:w-[150px] w-[100px]" src="assets/Logo.png" alt="">
             </div>
             <div class="sort">
                 <label class="input">
@@ -28,7 +28,7 @@
                 </label>
             </div>
             <div class="blog">
-                <button class="btn bg-red-500 text-white">Sort by Views</button>
+                <button class="btn bg-red-500 text-white text-xs md:text-md">Sort by Views</button>
             </div>
         </nav>
     </header>
@@ -36,10 +36,10 @@
         <button onclick="loadVideos()" class="btn bg-red-500 text-white cat-button" id="static-btn">All</button>
     </nav>
 
-    <section id="video-container" class="w-11/12 mx-auto grid grid-cols-4 gap-5 pb-20">
+    <section id="video-container" class="w-11/12 mx-auto grid md:grid-cols-4 grid-cols-1 gap-5 pb-20">
         <div class="col-span-full flex flex-col justify-center items-center py-24">
             <img src="assets/Icon.png" alt="">
-            <h1 class="text-4xl font-bold">Oops!! Sorry, There is no content here</h1>
+            <h1 class="text-4xl font-bold text-center">Oops!! Sorry, There is no content here</h1>
         </div>
     </section>
 
